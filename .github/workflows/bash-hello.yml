@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Show Current Date and Time
-        run: ./show_datetime.sh
+        run: ./say_hello.sh
