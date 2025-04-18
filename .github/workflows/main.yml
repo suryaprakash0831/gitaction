@@ -1,10 +1,17 @@
-name: Hello World
+name: Hello Bash
 
 on: [push]
 
 jobs:
-  say-hello:
+  hello-bash:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Make Script Executable
+        run: chmod +x /say_hello.sh
+
+      - name: Run Hello Script
+        run: ./say_hello.sh
