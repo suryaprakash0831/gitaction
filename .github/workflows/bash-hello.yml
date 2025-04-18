@@ -1,16 +1,14 @@
-name: Hello via Bash Script
+name: Show Date & Time
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
-  hello-bash:
+  datetime-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Run Hello Script
-        run: ./say_hello.sh
+      - name: Show Current Date and Time
+        run: ./scripts/show_datetime.sh
