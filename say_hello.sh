@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello from script!"
+echo "Current Date and Time: $(date)"
