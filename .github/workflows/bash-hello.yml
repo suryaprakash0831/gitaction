@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Make Script Executable
-        run: chmod +x /say_hello.sh
+        run: chmod +x ./say_hello.sh
 
       - name: Run Hello Script
         run: ./say_hello.sh
